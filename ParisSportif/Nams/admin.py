@@ -10,7 +10,7 @@ class UserAdmin(admin.ModelAdmin):
 
 @admin.register(Paries)
 class PariesAdmin(admin.ModelAdmin):
-    list_display = ('equipeA' ,'score','scoreB','equipeB','montant_parié','date_parie',)
+    list_display = ('equipeA' ,'score','scoreB','equipeB','montant_parié','date_match','date_parie',)
     list_filter = ("date_parie",)
     search_fields = ('score',)
     list_per_page = 50
