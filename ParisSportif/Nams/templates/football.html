@@ -71,7 +71,7 @@
                         <div class="card-body">
                              <h5 class="card-title">vos paries du {{ date }}</h5>
                             {% for parie in paries %}
-                                {% if parie.v_date_match == date2 %}
+                                {% if parie.v_date_match == date2 and parie.id_user_id == user.id %}
                                     {% for inf in donne %}
                                         {% if parie.equipeA == inf.eq1 and parie.equipeB == inf.eq2 %}
                                             {% if parie.score == inf.scors  %}

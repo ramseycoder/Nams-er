@@ -75,7 +75,7 @@
                         <div class="card-body">
                              <h5 class="card-title">vos paries d'aujourd'hui</h5>
                             {% for parie in pares %}
-                                {% if parie.v_date_match == date %}
+                                {% if parie.v_date_match == date and parie.id_user_id == user.id %}
                                     <p class="card-text">{{ parie.equipeA }} {{ parie.score }} - {{ parie.scoreB }} {{ parie.equipeB }}</p>
                                 {% endif %}
                             {% endfor %}

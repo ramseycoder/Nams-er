@@ -16,8 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
-from datetime import date, timedelta
-date_hier = date.today() - timedelta(days=1)
 urlpatterns = [
     path('',views.redir),
     path('home',views.home, name="home"),
